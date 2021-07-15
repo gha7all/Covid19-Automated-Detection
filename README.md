@@ -19,7 +19,7 @@ Throughout implementing this project, we have been changing some parameters for 
 XGBClassifier is the main idea, but we're gonna train the data with other models as well.
 
 ## XGBClassifier parameters optimization
-Since there are multiple parametrs to play with, we decided to find the best parameters for the classifier, which is not an easy experiment to do; so we used Bayesian optimization, as wikipedia mentioned:
+Since there are multiple parameters to play with, we decided to find the best parameters for the classifier, which is not an easy experiment to do; so we used Bayesian optimization, as wikipedia mentioned:
 > Bayesian optimization is a sequential design strategy for global optimization of black-box functions that does not assume any functional forms. It is usually employed to optimize expensive-to-evaluate functions.
 
 ### Pip installation
