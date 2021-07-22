@@ -16,7 +16,10 @@ The CNN network architectures that we've been using:
 Throughout implementing this project, we have been changing some parameters for a better result.
 
 ## Classification
-XGBClassifier is the main idea, but we're gonna train the data with other models as well.
+### Classifiers:
+* XGBoost Classifier
+* CatBoost Classifier
+* Random Forest
 
 ## XGBClassifier parameters optimization
 Since there are multiple parameters to play with, we decided to find the best parameters for the classifier, which is not an easy experiment to do; so we used Bayesian optimization, as wikipedia mentioned:
@@ -29,4 +32,4 @@ pip install bayesian-optimization
 
 
 ## Accuracy
-80 is the highest percentage of accuracy we have reached so far, which, in any case, is not enough.
+89 is the highest percentage of accuracy we have reached so far, we reached this accuracy by using catboost classifier.
