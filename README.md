@@ -10,18 +10,22 @@ There are some simple methods in Deep learning which can classify images into di
 The CNN network architectures that we've been using:
 * VGG16
 * Xception
+* DenseNet 169
 * Inception_V3
 * MobileNet
 
-Throughout implementing this project, we have been changing some parameters for a better result.
+Throughout implementing this project, we have found an idea that it's better to combine feautures of two networks, we combined features of DenseNet and MobileNet.
 
 ## Classification
 ### Classifiers:
 * XGBoost Classifier
 * CatBoost Classifier
+* LightGBM classifier
 * Random Forest
 
-## XGBClassifier parameters optimization
+So far the best and fastest classifier is LightGBM classifier and it gave us the highest accuracy of all.
+
+## Parameters optimization
 Since there are multiple parameters to play with, we decided to find the best parameters for the classifier, which is not an easy experiment to do; so we used Bayesian optimization, as wikipedia mentioned:
 > Bayesian optimization is a sequential design strategy for global optimization of black-box functions that does not assume any functional forms. It is usually employed to optimize expensive-to-evaluate functions.
 
@@ -29,7 +33,8 @@ Since there are multiple parameters to play with, we decided to find the best pa
 ```
 pip install bayesian-optimization
 ```
+We used this method to optimize xgboost classifier's parameters and used grid search to reach optimized parameters of catboost classifier.
 
 
 ## Accuracy
-89 is the highest percentage of accuracy we have reached so far, we reached this accuracy by using catboost classifier.
+91.11 is the highest percentage of accuracy we have reached so far, we reached this accuracy by using LightGBM classifier.
