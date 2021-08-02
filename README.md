@@ -1,5 +1,5 @@
 # Covid19 Automated Detection
-Here we're going to classify given CTR images and distinguish whether if there is any sign of covid-19 or not. In this documentation we name some methods to show how we got here and how could we reach the highest accuracy; **only the methods that gave us the best results are included in the code**
+Here we're going to classify given CTR images and distinguish whether if there is any sign of covid-19 or not. In this documentation we name some methods to show how we got here and how could we reach the highest accuracy; **only the methods that gave us the best results are included in the code.**
 
 ## Dataset
 Click [here](https://github.com/muhammedtalo/COVID-19) to access the dataset.
