@@ -25,7 +25,7 @@ Throughout implementing this project, we have found an idea that it's better to 
 >LightGBM extends the gradient boosting algorithm by adding a type of automatic feature selection as well as focusing on boosting examples with larger gradients. This can result in a dramatic speedup of training and improved predictive performance.
 
 Those we tried and they didn't give us a convenient accuracy:
-* CatBoost Classifier
+* LightGBM Classifier
 * XGBoost Classifier
 * CatBoost Classifier
 * Random Forest
