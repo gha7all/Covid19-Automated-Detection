@@ -8,7 +8,7 @@ There are some simple methods in Deep learning which can classify images into di
 
 
 ## Feature Extraction
->Feature extraction is a type of dimensionality reduction where a large number of pixels of the image are efficiently represented in such a way that interesting parts of the image are captured effectively.>
+>Feature extraction is a type of dimensionality reduction where a large number of pixels of the image are efficiently represented in such a way that interesting parts of the image are captured effectively.
 
 CNN network architectures which we used to extract the features:
 
