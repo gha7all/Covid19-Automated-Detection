@@ -15,9 +15,13 @@ Those we tried and they failed:
 * VGG16
 * Xception
 * Inception_V3
+* ResNet
 
 
-Throughout implementing this project, we have found an idea that it's better to combine feautures of two networks, we combined features of DenseNet and MobileNet. So the model is trained with 2600 features per each image.
+Throughout implementing this project, we have found an idea that it's better to combine feautures of two networks, we combined features of DenseNet and MobileNet.
+
+## Feature Selection
+Training the model by using all the extracted features probably isn't the best idea, so that the best features which have the most effect on producing output are selected by SelectKBest algorithm; it'll boost the speed of training. 2000 features per image are ready to be trained by a classifier.
 
 ## Classification
 ### Classifiers:
@@ -37,8 +41,9 @@ Since there are multiple parameters to play with, we decided to find the best pa
 
 
 ## Accuracy
-91.11 is the highest percentage of accuracy we have reached so far, we reached this accuracy by using LightGBM classifier.
-
+* Binary class classification(Covid-19, No-finding): 98.54
+* Multi class classification(Covid-19, Pneumonia, No-findings): 91.11
+<br> In order to classify both types of classifications, the LightGBM classifier is used. The hyper-parameters are tuned.
 ## Performance Metrics
 Because our class distribution is imbalanced, we determined metrics beside accuracy, such as precision, sensitivity, specificity and f1-score.
 
