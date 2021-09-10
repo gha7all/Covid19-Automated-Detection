@@ -43,7 +43,8 @@ Since there are multiple parameters to play with, we decided to find the best pa
 ## Accuracy
 * Binary class classification(Covid-19, No-finding): 98.54
 * Multi class classification(Covid-19, Pneumonia, No-findings): 91.11
-<br> In order to classify both types of classifications, the LightGBM classifier is used. The hyper-parameters are tuned.
+<br>
+In order to classify both types of classifications, the LightGBM classifier is used. Hyper-parameters are tuned.
 ## Performance Metrics
 Because our class distribution is imbalanced, we determined metrics beside accuracy, such as precision, sensitivity, specificity and f1-score.
 
